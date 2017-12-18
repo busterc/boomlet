@@ -1,16 +1,13 @@
 # boomlet
-Bookmarklet compiler encloses, encodes, minifies your Javascript file and automatically opens an HTML page with your new bookmarklet for immediate use.
+> Bookmarklet compiler encloses, encodes, minifies your Javascript file and automatically opens an HTML page with your new bookmarklet for immediate use.
 
 1. Write some tricky Javascript and save it to a file.
 1. Run boomlet.
 1. Drag, drop and begin using your bookmarklet immediately.
 
-## Version
-1.0.0
-
 ## Installation
 ```sh
-npm i boomlet -g
+npm install boomlet # --global
 ```
 
 ## CLI Usage
@@ -18,39 +15,10 @@ npm i boomlet -g
 boomlet <filename> <linktext>
 ```
 
-## Makefile Usage (i.e. Sublime Text, etc.)
-```sh
-BOOMFILE := filename.js
-BOOMTEXT := 'This Bookmark Goes BOOM!'
-
-boom:
-    boomlet $(BOOMFILE) $(BOOMTEXT)
-
-.PHONY: boom
-```
-
-<!---
-# *Easter Egg:* Local Mode
-
-## Local Installation
-```sh
-npm i boomlet
-```
-
-## Local App Usage
-```sh
-require('boomlet').boom(<filename>, <linktext>);
-```
--->
-
-## Dependencies
-* [open](https://github.com/pwnall/node-open) - opens the default browser
-* [uglify-js](http://lisperator.net/uglifyjs) - eliminates uneccessary whitespace
-
 ## License
 The MIT License (MIT)
 
-Copyright (c) 2013 Buster Collings
+Copyright (c) 2013-2017 Buster Collings
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
