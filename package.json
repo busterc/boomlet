@@ -1,20 +1,26 @@
 {
   "name": "boomlet",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Bookmarklet compiler encloses, encodes, minifies your Javascript file and automatically opens an HTML page with your new bookmarklet for immediate use.",
+  "scripts": {
+    "test": "./bin/boomlet ./test/hi.js 'Test Boomlet'"
+  },
   "main": "./lib/main.js",
-  "preferGlobal": "true",
   "bin": {
     "boomlet": "./bin/boomlet"
   },
   "dependencies": {
-    "open": "~0.0.4",
-    "uglify-js": "~2.4.0"
+    "open": "0.0.5",
+    "temp-write": "^3.3.0",
+    "uglify-js": "^3.2.2"
   },
   "repository": "https://github.com/busterc/boomlet.git",
   "keywords": [
     "bookmarklet",
-    "bookmarklets"
+    "bookmarklets",
+    "userscripts",
+    "user-scripts",
+    "userscript"
   ],
   "author": "busterc",
   "license": "MIT"
